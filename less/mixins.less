@@ -1,1 +1,18 @@
 // Mixins Here
+
+
+//parametric mixin
+
+  .button-maker(@width, @height, @bg-color, @font-color, @font-size) {
+      width: @width;
+      height: @height;
+      background-color: @bg-color;
+      color: @font-color;
+      cursor: pointer;
+      font-size: @font-size;
+
+      &:hover {
+          background: @font-color;
+          color: @bg-color;
+      }
+  }
