@@ -168,9 +168,10 @@ p {
   border-bottom: 1px solid #dee2e6;
 }
 .main-navigation .nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   justify-content: space-evenly;
   margin-right: 160px;
   margin-left: 160px;
@@ -205,6 +206,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .cloud {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;

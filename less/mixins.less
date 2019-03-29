@@ -1,10 +1,20 @@
 // Mixins Here
 
+//everything for button
+
+
+
 .center (){
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
 
 
 
@@ -13,13 +23,13 @@
 
   .button-maker(@width, @height, @bg-color, @font-color, @font-size) {
     .center ();
+    .border-radius(10px);
       width: @width;
       height: @height;
       background-color: @bg-color;
       color: @font-color;
-      cursor: pointer;
       font-size: @font-size;
-      border-radius: 10px;
+      cursor: pointer;
 
       @media @mobile {
           width: 100%;
